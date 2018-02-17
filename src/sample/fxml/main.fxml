@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.MainController">
+   <children>
+      <TextArea fx:id="textArea" layoutY="25.0" prefHeight="300.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="500.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Файл">
+            <items>
+                  <MenuItem fx:id="open" mnemonicParsing="false" onAction="#filePresed" text="Открыть" />
+                  <MenuItem fx:id="save" mnemonicParsing="false" onAction="#filePresed" text="Сохранить" />
+                  <MenuItem fx:id="saves" mnemonicParsing="false" onAction="#filePresed" text="Сохранить как..." />
+                  <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#filePresed" text="Выход" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+                  <MenuItem mnemonicParsing="false" text="Официальный сайт сайт" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
